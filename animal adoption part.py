@@ -366,6 +366,22 @@ def openNewWindow2():
         img17 = ImageTk.PhotoImage(Image.open(r"brown.jpg"))  
 
         canvas17.create_image(20, 20, anchor=tk.NW, image=img17)
+        
+    if variable.get() == "Parrot":  
+        
+        canvas18 = tk.Canvas(newWindow, width = 300, height = 300)  
+        canvas18.pack()  
+        img18 = ImageTk.PhotoImage(Image.open(r"beagle.jpg"))  
+
+        canvas18.create_image(20, 20, anchor=tk.NW, image=img18)
+        
+    if variable.get() == "Love Birds":  
+        
+        canvas19 = tk.Canvas(newWindow, width = 300, height = 300)  
+        canvas19.pack()  
+        img19 = ImageTk.PhotoImage(Image.open(r"pug.jpg"))  
+
+        canvas19.create_image(20, 20, anchor=tk.NW, image=img19) 
 
             
    
