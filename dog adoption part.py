@@ -179,6 +179,91 @@ def openNewWindow():
 button = tk.Button(window, text="Next", command=openNewWindow)
 button.pack(side=tk.BOTTOM)
 
+def openNewWindow2():
 
+    global img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19
+
+    newWindow = tk.Toplevel(window)
+    newWindow.title("Animal Adoption Page 3")
+    newWindow.geometry("700x400")
+    label1 = tk.Label(newWindow, text = "You selected:",fg = "black", bg = "beige", font = "bold",)
+    label1.pack()
+
+    if variable.get() == "Beagle":  
+        
+        canvas7 = tk.Canvas(newWindow, width = 216, height = 234)  
+        canvas7.pack()  
+        img7 = ImageTk.PhotoImage(Image.open(r"beagle.jpg"))  
+
+        canvas7.create_image(20, 20, anchor=tk.NW, image=img7)
+        if variable1.get() == "1-5":
+            label4 = tk.Label(newWindow, text = "1-5 Beagle")
+            label4.pack()
+        
+        elif variable1.get() == "5-10":
+            label5 = tk.Label(newWindow, text = "5-10 Beagle")
+            label5.pack()
+
+        elif variable1.get() == "Senior":
+            label6 = tk.Label(newWindow, text = "Senior Beagle")
+            label6.pack()
+
+    if variable.get() == "Pug":  
+        
+        canvas8 = tk.Canvas(newWindow, width = 300, height = 300)  
+        canvas8.pack()  
+        img8 = ImageTk.PhotoImage(Image.open(r"pug.jpg"))  
+
+        canvas8.create_image(20, 20, anchor=tk.NW, image=img8)
+        if variable1.get() == "1-5":
+            label7 = tk.Label(newWindow, text = "1-5 Pug")
+            label7.pack()
+        
+        elif variable1.get() == "5-10":
+            label8 = tk.Label(newWindow, text = "5-10 Pug")
+            label8.pack()
+
+        elif variable1.get() == "Senior":
+            label9 = tk.Label(newWindow, text = "Senior Pug")
+            label9.pack()
+
+    if variable.get() == "German Shepherd":  
+        
+        canvas9 = tk.Canvas(newWindow, width = 300, height = 300)  
+        canvas9.pack()  
+        img9 = ImageTk.PhotoImage(Image.open(r"german_shepherd.jpg"))  
+
+        canvas9.create_image(20, 20, anchor=tk.NW, image=img9)
+        if variable1.get() == "1-5":
+            label10 = tk.Label(newWindow, text = "1-5 German Shepherd")
+            label10.pack()
+        
+        elif variable1.get() == "5-10":
+            label11 = tk.Label(newWindow, text = "5-10 German Shepherd")
+            label11.pack()
+
+        elif variable1.get() == "Senior":
+            label12 = tk.Label(newWindow, text = "Senior German Shepherd")
+            label12.pack()
+
+
+    if variable.get() == "Labrador":  
+        
+        canvas10 = tk.Canvas(newWindow, width = 300, height = 300)  
+        canvas10.pack()  
+        img10 = ImageTk.PhotoImage(Image.open(r"labrodor.jpg"))  
+
+        canvas10.create_image(20, 20, anchor=tk.NW, image=img10)
+        if variable1.get() == "1-5":
+            label13 = tk.Label(newWindow, text = "1-5 Labrador")
+            label13.pack()
+        
+        elif variable1.get() == "5-10":
+            label14 = tk.Label(newWindow, text = "5-10 Labrador")
+            label14.pack()
+
+        elif variable1.get() == "Senior":
+            label15 = tk.Label(newWindow, text = "Senior Labrador")
+            label15.pack()
 
 window.mainloop()
