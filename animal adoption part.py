@@ -342,6 +342,30 @@ def openNewWindow2():
         elif variable1.get() == "Senior":
             label27 = tk.Label(newWindow, text = "Senior Siberian")
             label27.pack()
+            
+                if variable.get() == "White":  
+        
+        canvas15 = tk.Canvas(newWindow, width = 238, height = 212)  
+        canvas15.pack()  
+        img15 = ImageTk.PhotoImage(Image.open(r"white.jpg"))  
+
+        canvas15.create_image(20, 20, anchor=tk.NW, image=img15)
+
+    if variable.get() == "Black":  
+        
+        canvas16 = tk.Canvas(newWindow, width = 280, height = 180)  
+        canvas16.pack()  
+        img16 = ImageTk.PhotoImage(Image.open(r"black.jpg"))  
+
+        canvas16.create_image(20, 20, anchor=tk.NW, image=img16)
+
+    if variable.get() == "Brown":  
+        
+        canvas17 = tk.Canvas(newWindow, width = 264, height = 191)  
+        canvas17.pack()  
+        img17 = ImageTk.PhotoImage(Image.open(r"brown.jpg"))  
+
+        canvas17.create_image(20, 20, anchor=tk.NW, image=img17)
 
             
    
