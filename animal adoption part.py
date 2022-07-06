@@ -343,7 +343,7 @@ def openNewWindow2():
             label27 = tk.Label(newWindow, text = "Senior Siberian")
             label27.pack()
             
-                if variable.get() == "White":  
+    if variable.get() == "White":  
         
         canvas15 = tk.Canvas(newWindow, width = 238, height = 212)  
         canvas15.pack()  
