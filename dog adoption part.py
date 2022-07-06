@@ -27,7 +27,7 @@ opt.config(width=90, font=('Helvetica', 12))
 opt.pack()
     
 
-label3 =tk.Label(window, text = "Age")
+label3 =tk.Label(window, text = "Age of the dog")
 label3.pack()
 OptionList1 = [
 "1-5",
