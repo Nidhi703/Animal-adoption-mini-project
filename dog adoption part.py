@@ -33,11 +33,7 @@ opt.config(width=90, font=('Helvetica', 12))
 opt.pack()
 
 def openNewWindow():
-  global img2
-  global img3
-  global img4
-  global img5
-  global img6
+  global img2, img2, img3, img4, img5, img6
   global variable 
   global variable1
   global newWindow
