@@ -1,46 +1,36 @@
 import tkinter as tk
 from PIL import ImageTk,Image 
 window = tk.Tk()
+window.configure(bg = "light blue")
 window.title("Animal Adoption") 
 
-canvas = tk.Canvas(window, width = 300, height = 300)  
+canvas = tk.Canvas(window, width = 301, height = 167)  
 canvas.pack()  
-img = ImageTk.PhotoImage(Image.open(r"c:\Users\navne\Desktop\Python\cute.jpg"))  
+img = ImageTk.PhotoImage(Image.open(r"adoptme.jpg"))  
 
-canvas.create_image(20, 20, anchor=tk.NW, image=img) 
+canvas.create_image(1, 1, anchor=tk.NW, image=img) 
 
-label = tk.Label(window, text = "Welcome! Please pick what kind of animal you are looking for:",fg = "black", bg = "beige", font = "bold",)
+canvas1 = tk.Canvas(window, width = 225, height = 224)  
+canvas1.pack()  
+img1 = ImageTk.PhotoImage(Image.open(r"animals.jpg"))  
+
+canvas1.create_image(1,1, anchor=tk.NW,image=img1) 
+
+label = tk.Label(window, text = "Welcome! Please pick what kind of animal you are looking for:",fg = "Red", bg = "light pink", font = "bold",)
 label.pack()
-label2 = tk.Label(window, text = "breed")
-label2.pack()
-OptionList = [
-"Beagle",
-"Pug",
-"German Shepherd",
-"Labrador"
-] 
-variable = tk.StringVar(window)
-variable.set(OptionList[0])
 
-opt = tk.OptionMenu(window, variable, *OptionList)
+OptionList2 = [
+"Dog",
+"Cat",
+"Rabbit",
+"Bird"
+] 
+variable2 = tk.StringVar(window)
+variable2.set(OptionList2[0])
+
+opt = tk.OptionMenu(window, variable2, *OptionList2)
 opt.config(width=90, font=('Helvetica', 12))
 opt.pack()
-    
-
-label3 =tk.Label(window, text = "Age of the dog")
-label3.pack()
-OptionList1 = [
-"1-5",
-"5-10",
-"Senior",
-] 
-
-variable1 = tk.StringVar(window)
-variable1.set(OptionList1[0])
-
-opt1 = tk.OptionMenu(window, variable1, *OptionList1)
-opt1.config(width=90, font=('Helvetica', 12))
-opt1.pack()
 
 def openNewWindow():
 
